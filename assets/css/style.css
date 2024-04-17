@@ -8,3 +8,13 @@ grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 grid-gap: 60px;
 height: 550px;
 }
+#collapsable_header{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50px,1fr));  
+  }
+#logo{
+  }
+#right_header{
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(20px,1fr));
+  }

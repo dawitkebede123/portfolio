@@ -18,3 +18,9 @@ height: 550px;
      display: grid;
      grid-template-columns: repeat(auto-fit,minmax(20px,1fr));
   }
+
+#btn_right_header{
+    width: 50px;
+    border-radius: 100%;
+    background-color: aqua;
+}

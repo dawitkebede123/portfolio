@@ -2,6 +2,7 @@
     const button = document.getElementsByTagName('button')
     const product = document.getElementsByClassName('product')
     const clicked = false
+
     for(let i = 0;i<=button.length;i++){
         button[i].addEventListener('mouseover',()=>{
             button[i].style.backgroundColor = 'green'
@@ -25,13 +26,7 @@
                
             })
         // }
-    }
+        }
 
-    for(let i=0;i<=product.length;i++){
-        product[i].addEventListener('mouseover',()=>{
-            alert('mouseover')
-             product[i].style.border = '2px solid blue'
-           
-        })
-    }
+      
 })()

@@ -28,7 +28,8 @@
     }
 
     for(let i=0;i<=product.length;i++){
-        product[i].addEventListener('click',()=>{
+        product[i].addEventListener('mouseover',()=>{
+            alert('mouseover')
              product[i].style.border = '2px solid blue'
            
         })

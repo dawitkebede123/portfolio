@@ -1,38 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Whisper&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Internal Styles -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0b0c10;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, h2, p {
+      margin: 20px 0;
+    }
+
+    .dropdown-content, .dropdown-content2, .dropdown-content3 {
+      display: none;
+      margin-top: 10px;
+      background-color: #EFEEEA;
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .show {
+      display: block !important;
+    }
+
+    #main-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      align-items: center;
+      gap: 20px;
+    }
+
+    #main-container img {
+      width: 80%;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .project-title {
+      color: antiquewhite;
+      font-size: 40px;
+      font-family: cursive;
+      font-weight: 400;
+      cursor: pointer;
+      margin: 10px 0;
+    }
+
+    .proof-links a {
+      color: antiquewhite;
+      font-size: 40px;
+      font-family: 'Whisper', cursive;
+      font-weight: 400;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+    }
+
+    .gradient-text {
+      font-size: 30px;
+      background-image: linear-gradient(to right, #b16c28, #d91010);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  </style>
+
 </head>
 <body>
-    <h1 style="font-size: 100px; width: 50px; ">DAWIT WOLDU</h1>
-    <div id="main-container" style="display: grid;grid-template-columns: repeat(auto-fit,minmax(300px,1fr));">
-     <div>
-        <img src="https://avatars.githubusercontent.com/u/60181219?s=400&u=fa0c7a1fbf1d2bc8dabd8bf64cb24bb42f0521be&v=4" width="50%" height="50%" style="border-radius: 50%;" border-radius="10px">
-     </div>
-     <div>
-        <h2 style="font-size: 40px;">Full Stack web developer</h2>
-        <p style="font-size: 20px; line-height: 1.5;">As a passionate Full Stack Web Developer, I bring to the table a vibrant fusion of front-end creativity and back-end logic. With a keen eye for design and a systematic approach to problem-solving, I craft seamless user experiences and robust server-side functionalities. My journey in coding began with curiosity and has since evolved into a toolkit brimming with technologies like JavaScript, React, Node.js, and more.</p>
-     </div>
-    </div>
-    <div style="margin-top: 400px;">
-      <h1 style="color: rgb(119, 201, 216); font-size: 50px; text-align: center;">Projects</h1>
-      <h2 style="font-size: 30px; background-image: linear-gradient(to right, #b16c28, #d91010);color: transparent;background-clip: text;">Click on the titles to view the projects</h2>
-      <h2 ><a style="color: antiquewhite; font-size: 50px; font-family: 'Whisper', cursive; font-weight: 400;" href="./movie.html">movie site</a></h2>
-      <h2><a style="color: antiquewhite; font-size: 50px; font-family: 'Whisper', cursive; font-weight: 400;" href="./online_store.html">online store</a></h2>
-      <h2><a style="color: antiquewhite; font-size: 50px; font-family: 'Whisper', cursive; font-weight: 400;" href="./blog.html">blog site</a></h2>
-      <h2><a style="color: antiquewhite; font-size: 50px; font-family: 'Whisper', cursive; font-weight: 400;" href="./volunteer.html">volunteer's site</a></h2>
-      <h2><a style="color: antiquewhite; font-size: 50px; font-family: 'Whisper', cursive; font-weight: 400;" href="./collapsable-header.html">collapsable-header</a></h2>
-      <h2><a style="color: antiquewhite; font-size: 50px; font-family: 'Whisper', cursive; font-weight: 400;" href="./vegitable_market.html">vegitable market</a></h2>
 
+  <h1 style="font-size: 80px;">DAWIT WOLDU</h1>
+
+  <div id="main-container">
+    <div>
+      <img src="https://avatars.githubusercontent.com/u/60181219?s=400&u=fa0c7a1fbf1d2bc8dabd8bf64cb24bb42f0521be&v=4" alt="Profile Picture">
     </div>
+    <div>
+      <h2 style="font-size: 40px;">Full Stack Web Developer</h2>
+      <p style="font-size: 18px; line-height: 1.6;">
+        As a passionate Full Stack Web Developer, I bring to the table a vibrant fusion of front-end creativity and back-end logic. 
+        With a keen eye for design and a systematic approach to problem-solving, I craft seamless user experiences and robust server-side functionalities. 
+        My journey in coding began with curiosity and has since evolved into a toolkit brimming with technologies like JavaScript, React, Node.js, and more.
+      </p>
+    </div>
+  </div>
+
+  <div style="margin-top: 100px;">
+
+    <h1 style="color: rgb(119, 201, 216); font-size: 50px; text-align: center;">Real World Projects</h1>
+    <h2 class="gradient-text">Click on the titles to view the projects</h2>
+
+    <h2 id="dropdownToggle1" class="project-title">
+      Ministry of Innovation and Technology SMS system (8181)
+    </h2>
+    <div id="dropdown1" class="dropdown-content">
+      <p>I built the Mint SMS system using Kannel (SMS Gateway), Node.js (microservices, cron jobs, backend API server), and Next.js (Admin UI).</p>
+    </div>
+
+    <h2 id="dropdownToggle2" class="project-title">
+      Multiple Federal, Regional, and City Administration Web Portals using Next.js and Strapi
+    </h2>
+    <div id="dropdown2" class="dropdown-content2">
+      <p>I built web portals for different institutions using Next.js (UI) and Strapi (Headless CMS Backend).</p>
+      <p>I gained plenty of experience with Next.js and Node.js frameworks.</p>
+    </div>
+
+    <h2 id="dropdownToggle3" class="project-title">
+      Addis Chamber Business Directory Mobile App Admin Portal
+    </h2>
+    <div id="dropdown3" class="dropdown-content3">
+      <p>I used React (Bootstrap with Vite) to build the admin portal for managing the business directory mobile app data. I also contributed to the Flutter mobile app project.</p>
+    </div>
+
+    <h1 style="color: rgb(119, 201, 216); font-size: 50px; text-align: center; margin-top: 60px;">UI Proof of Concept Projects</h1>
+
+    <div class="proof-links">
+      <a href='./movie.html'>Movie Site</a>
+      <a href="./online_store.html">Online Store</a>
+      <a href="./blog.html">Blog Site</a>
+      <a href="./volunteer.html">Volunteer's Site</a>
+      <a href="./vegitable_market.html">Vegetable Market</a>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const toggles = [
+      { buttonId: 'dropdownToggle1', contentId: 'dropdown1' },
+      { buttonId: 'dropdownToggle2', contentId: 'dropdown2' },
+      { buttonId: 'dropdownToggle3', contentId: 'dropdown3' },
+    ];
+
+    toggles.forEach(({ buttonId, contentId }) => {
+      const button = document.getElementById(buttonId);
+      const content = document.getElementById(contentId);
+
+      button.addEventListener('click', () => {
+        content.classList.toggle('show');
+      });
+    });
+  </script>
 
 </body>
 </html>

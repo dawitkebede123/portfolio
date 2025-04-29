@@ -1,5 +1,12 @@
 const mediaQuery = window.matchMedia("(max-width: 500px)");
 
+const toggleButton = document.getElementById('dropdownToggle');
+const dropdown = document.getElementById('dropdown');
+
+toggleButton.addEventListener('click', (e) => {
+  e.preventDefault(); // prevent default link behavior
+  dropdown.classList.toggle('show');
+});
 function handleMediaChange(event) {
   const isSmallScreen = event.matches; 
   const right_header = document.getElementById("right_header")
